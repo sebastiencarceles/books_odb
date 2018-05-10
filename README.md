@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple example project, to illustrate the online course Learn Ruby on Rails QUICKLY (currently available only in french: [Apprendre Ruby on Rails RAPIDEMENT](https://TODO/link) on Udemy).
 
-Things you may want to cover:
+## Ruby version
+2.5.0
 
-* Ruby version
+## Rails version
 
-* System dependencies
+5.2.0
 
-* Configuration
+## Prerequisites
 
-* Database creation
+You will need to install PostgreSQL. For example, for Ubuntu:
 
-* Database initialization
+```shell
+sudo apt-get update
+sudo apt-get install libpq-dev postgresql postgresql-contrib
+```
 
-* How to run the test suite
+## Configuration
 
-* Services (job queues, cache servers, search engines, etc.)
+Perform a `bin/bundle install` to install every needed gem.
 
-* Deployment instructions
+## Database
 
-* ...
+Create the database with `bin/rails db:setup`.
+
+## Run the test suite
+
+Run `bin/rspec`.
