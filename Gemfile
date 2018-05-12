@@ -43,7 +43,7 @@ group :development, :test do
   # Test tools
   gem 'rspec-rails', '~> 3.7'
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
-  gem 'factory_bot'
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 group :development do
