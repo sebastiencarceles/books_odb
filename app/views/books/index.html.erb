@@ -8,7 +8,7 @@
     <th></th>
   </tr>
 
-  <% @books.each do |book| %>
+  <% @books.order(:title).each do |book| %>
     <tr>
       <td><%= book.title %></td>
       <td><%= book.author %></td>
