@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destroy]
+  before_action :store_editor_name, only: [:create, :update]
 
   def index
     @books = Book.all
@@ -40,10 +41,14 @@ class BooksController < ApplicationController
   private
 
     def book_params
-      params.require(:book).permit(:title, :author, :description, :pages_count, :published_at)
+      params.require(:book).permit(:title, :author, :description, :pages_count, :published_at, :editor_name)
     end
 
     def find_book
       @book = Book.find(params[:id])
+    end
+
+    def store_editor_name
+      session[:editor_name] = book_params[:editor_name]
     end
 end
