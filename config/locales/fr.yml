@@ -29,7 +29,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+fr:
   home:
     index:
-      welcome: Not much for now. But hey, hello world!
+      welcome: Pas grand chose pour l'instant. On y travaille !
