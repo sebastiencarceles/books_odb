@@ -1,11 +1,15 @@
 ---
 en:
   books:
+    edit:
+      title: Edit the book
     index:
       book_author: Author
       book_title: Title
       new_book: "+ Add a book"
       title: All the books
+    new:
+      title: Create a new book
   home:
     index:
       welcome: Not much for now. But hey, hello world!
