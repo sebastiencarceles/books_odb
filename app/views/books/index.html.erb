@@ -1,9 +1,9 @@
-<h1>All the books</h1>
+<h1><%= t("books.index.title") %></h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Author</th>
+    <th><%= t("books.index.book_title") %></th>
+    <th><%= t("books.index.book_author") %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -20,4 +20,4 @@
   <% end %>
 </table>
 
-<%= link_to "+ Add a book", new_book_path %>
+<%= link_to t("books.index.new_book"), new_book_path %>

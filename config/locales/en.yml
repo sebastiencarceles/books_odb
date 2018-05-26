@@ -33,3 +33,9 @@ en:
   home:
     index:
       welcome: Not much for now. But hey, hello world!
+  books:
+    index:
+      title: All the books
+      book_title: Title
+      book_author: Author
+      new_book: + Add a book

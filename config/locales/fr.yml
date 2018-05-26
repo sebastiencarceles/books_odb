@@ -33,3 +33,9 @@ fr:
   home:
     index:
       welcome: Pas grand chose pour l'instant. On y travaille !
+  books:
+    index:
+      title: Tous les livres
+      book_title: Titre
+      book_author: Auteur
+      new_book: + Ajouter un livre
