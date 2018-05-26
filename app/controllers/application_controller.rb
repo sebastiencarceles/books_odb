@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
   private
 
     def set_locale
-      I18n.locale = params[:locale] || I18n.default_locale
-      # cookies[:locale] = { value: locale, expires: 30.days }
+      locale = params[:locale] || cookies[:locale] || I18n.default_locale
+      I18n.locale = locale
+      cookies[:locale] = { value: locale, expires: 30.days }
     end
 end
