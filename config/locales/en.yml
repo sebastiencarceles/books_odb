@@ -5,11 +5,15 @@ en:
       title: Edit the book
     index:
       book_author: Author
+      book_summary: Summary
       book_title: Title
       new_book: "+ Add a book"
       title: All the books
     new:
       title: Create a new book
+  helpers:
+    books:
+      written_by: written by %{editor_name}
   home:
     index:
       welcome: Not much for now. But hey, hello world!

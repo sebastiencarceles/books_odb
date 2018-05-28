@@ -5,11 +5,15 @@ fr:
       title: Modifier le livre
     index:
       book_author: Auteur
+      book_summary: En bref
       book_title: Titre
       new_book: "+ Ajouter un livre"
       title: Tous les livres
     new:
       title: Créer un nouveu livre
+  helpers:
+    books:
+      written_by: écrit par %{editor_name}
   home:
     index:
       welcome: Pas grand chose pour l'instant. On y travaille !
