@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   before_action :store_editor_name, only: [:create, :update]
 
   def index
-    @books = Book.all
+    @books = Book.order(:title).page(params[:page])
   end
 
   def show

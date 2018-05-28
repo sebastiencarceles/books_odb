@@ -9,7 +9,7 @@
     <th></th>
   </tr>
 
-  <% @books.order(:title).each do |book| %>
+  <% @books.each do |book| %>
     <tr>
       <td><%= book.title %></td>
       <td><%= book.author %></td>
@@ -19,5 +19,7 @@
     </tr>
   <% end %>
 </table>
+
+<%= paginate @books %>
 
 <%= link_to t("books.index.new_book"), new_book_path %>

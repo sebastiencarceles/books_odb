@@ -13,3 +13,10 @@ fr:
   home:
     index:
       welcome: Pas grand chose pour l'instant. On y travaille !
+  views:
+    pagination:
+      first: "&laquo; Début"
+      last: Fin &raquo;
+      next: Prochain &rsaquo;
+      previous: "&lsaquo; Précédent"
+      truncate: "&hellip;"

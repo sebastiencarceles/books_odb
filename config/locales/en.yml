@@ -13,3 +13,10 @@ en:
   home:
     index:
       welcome: Not much for now. But hey, hello world!
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: Last &raquo;
+      next: Next &rsaquo;
+      previous: "&lsaquo; Prev"
+      truncate: "&hellip;"
