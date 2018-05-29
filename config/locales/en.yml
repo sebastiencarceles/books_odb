@@ -1,6 +1,8 @@
 ---
 en:
   books:
+    created: Book created
+    destroyed: Book destroyed
     edit:
       title: Edit the book
     index:
@@ -10,6 +12,7 @@ en:
       title: All the books
     new:
       title: Create a new book
+    updated: Book updated
   home:
     index:
       welcome: Not much for now. But hey, hello world!
