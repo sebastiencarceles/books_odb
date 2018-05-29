@@ -17,3 +17,13 @@
 .field_with_errors {
   color: red;
 }
+
+.notice {
+  color: green;
+  font-style: italic;
+}
+
+.alert {
+  color: orange;
+  font-style: italic;
+}

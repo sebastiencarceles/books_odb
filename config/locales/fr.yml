@@ -1,6 +1,8 @@
 ---
 fr:
   books:
+    created: Livre créé
+    destroyed: Livre détruit
     edit:
       title: Modifier le livre
     index:
@@ -10,6 +12,7 @@ fr:
       title: Tous les livres
     new:
       title: Créer un nouveu livre
+    updated: Livre mis à jour
   home:
     index:
       welcome: Pas grand chose pour l'instant. On y travaille !

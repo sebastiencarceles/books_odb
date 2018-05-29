@@ -19,6 +19,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     if @book.save
+      flash[:notice] = t("books.created")
       redirect_to books_path
     else
       render :new
@@ -27,6 +28,7 @@ class BooksController < ApplicationController
 
   def update
     if @book.update(book_params)
+      flash[:notice] = t("books.updated")    
       redirect_to books_path
     else
       render :edit
@@ -35,6 +37,7 @@ class BooksController < ApplicationController
 
   def destroy
     @book.destroy
+    flash[:alert] = t("books.destroyed")    
     redirect_to books_path
   end
 
