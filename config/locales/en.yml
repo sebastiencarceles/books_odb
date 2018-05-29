@@ -1,6 +1,8 @@
 ---
 en:
   books:
+    created: Book created
+    destroyed: Book destroyed
     edit:
       title: Edit the book
     index:
@@ -11,6 +13,7 @@ en:
       title: All the books
     new:
       title: Create a new book
+    updated: Book updated
   helpers:
     books:
       written_by: written by %{editor_name}

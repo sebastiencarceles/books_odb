@@ -1,6 +1,8 @@
 ---
 fr:
   books:
+    created: Livre créé
+    destroyed: Livre détruit
     edit:
       title: Modifier le livre
     index:
@@ -11,6 +13,7 @@ fr:
       title: Tous les livres
     new:
       title: Créer un nouveu livre
+    updated: Livre mis à jour
   helpers:
     books:
       written_by: écrit par %{editor_name}
