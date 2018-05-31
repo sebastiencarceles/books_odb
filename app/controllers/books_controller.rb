@@ -37,8 +37,6 @@ class BooksController < ApplicationController
 
   def destroy
     @book.destroy
-    flash[:alert] = t("books.destroyed")    
-    redirect_to books_path
   end
 
   private
