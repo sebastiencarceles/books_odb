@@ -1,4 +1,14 @@
-<h1>Books Open Database</h1>
-<p><%= link_to "EN", url_for(only_path: true, locale: "en") %> - <%= link_to "FR", url_for(only_path: true, locale: "fr") %></p>
-<p><%= t("home.index.welcome") %></p>
-<%= link_to "Books", books_path %>
+<div class="row">
+  <div class="col-md-9">
+    <h1>Books Open Database</h1>
+  </div>
+  <div class="col-md-3">
+    <p><%= link_to "EN", url_for(only_path: true, locale: "en") %> - <%= link_to "FR", url_for(only_path: true, locale: "fr") %></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p><%= t("home.index.welcome") %></p>
+    <%= link_to "Books", books_path %>
+  </div>
+</div>
