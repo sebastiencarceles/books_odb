@@ -1,16 +1,10 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="display-4">Books Open Database</h1>
-    <p class="lead">An awesome open library</p>
+    <p class="lead"><%= t("home.index.welcome") %></p>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-9">
-    <p><%= t("home.index.welcome") %></p>
-    <%= link_to "Books", books_path %>
-  </div>
-  <div class="col-md-3">
-    <p><%= link_to "EN", url_for(only_path: true, locale: "en") %> - <%= link_to "FR", url_for(only_path: true, locale: "fr") %></p>
-  </div>
-</div>
+<%= link_to image_tag("flag_en.png", alt: "EN", class: "locale-flag"), url_for(only_path: true, locale: "en") %>
+<%= link_to image_tag("flag_fr.png", alt: "FR", class: "locale-flag"), url_for(only_path: true, locale: "fr") %>
+<%= link_to "Books", books_path %>
