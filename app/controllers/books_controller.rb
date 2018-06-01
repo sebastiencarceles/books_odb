@@ -46,7 +46,8 @@ class BooksController < ApplicationController
     end
 
     def find_book
-      @book = Book.find(params[:id])
+      @book = Book.find_by_id(params[:identifier])
+      @book ||= Book.find_by_slug(params[:identifier])
     end
 
     def store_editor_name
