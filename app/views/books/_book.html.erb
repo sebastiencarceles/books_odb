@@ -2,7 +2,7 @@
   <td><%= book.title %></td>
   <td><%= book.author %></td>
   <td><%= summary(book) %></td>
-  <td><%= link_to 'Show', book_path(book) %></td>
-  <td><%= link_to 'Edit', edit_book_path(book) %></td>
-  <td><%= link_to 'Delete', book_path(book), method: :delete, data: { confirm: 'Are you sure?' }, remote: true %></td>
+  <td><%= link_to 'Show', book_path(book.slug) %></td>
+  <td><%= link_to 'Edit', edit_book_path(book.slug) %></td>
+  <td><%= link_to 'Delete', book_path(book.slug), method: :delete, data: { confirm: 'Are you sure?' }, remote: true %></td>
 </tr>
