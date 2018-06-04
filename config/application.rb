@@ -16,7 +16,8 @@ module BooksOdb
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    # Mailer
     config.action_mailer.default_url_options = { host: 'booksodb.org' }
+    
+    config.active_job.queue_adapter = :sidekiq
   end
 end
