@@ -1,0 +1,9 @@
+<% if @comment.errors.any? %>
+  $("#new-comment").html("<%= j render "form", comment: @comment %>");
+<% else %>
+  $("#new-comment").hide()
+  $("#comments").show();
+  $("#add-comment").show();
+  $("#comments").prepend("<%= j render @comment %>");
+<% end %>
+

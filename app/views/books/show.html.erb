@@ -2,13 +2,10 @@
 <p><strong><%= @book.author %> - <%= @book.published_at %> - <%= @book.pages_count %> pages</strong></p>
 <p><%= @book.description %></p>
 <hr>
-<% @book.comments.order(created_at: :desc).each do |comment| %>
-  <div class="comment">
-    <div class="title">
-      <%= time_ago_in_words(comment.created_at) %> - <%= comment.first_name %> (<%= comment.score %> / 5)
-    </div>
-    <div class="description">
-      <%= comment.description %>
-    </div>
-  </div>
-<% end %>
+<%= link_to "Add a comment", "#", id: "add-comment" %>
+<div id="new-comment">
+  <%= render "comments/form", comment: @book.comments.new %>
+</div>
+<div id="comments">
+  <%= render "comments/comments", comments: @book.comments.order(created_at: :desc) %>
+</div>

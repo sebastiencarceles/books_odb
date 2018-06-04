@@ -1,0 +1,33 @@
+<%= form_with model: comment, url: book_comments_path(comment.book) do |form| %>
+  <h3>Add a new comment</h3>
+
+  <% if comment.errors.any? %>
+    <strong>
+      <%= pluralize(comment.errors.count, "error") %> prohibited this comment from being saved:
+    </strong>
+    <ul>
+      <% comment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <p>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= form.label :score %><br>
+    <%= form.number_field :score, min: 1, max: 5 %>
+  </p>
+
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %> 
