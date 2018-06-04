@@ -3,6 +3,7 @@ class Book < ApplicationRecord
   validates :pages_count, numericality: { only_integer: true, greater_than: 0 }, allow_blank: true
 
   before_validation :set_slug, if: :should_set_slug?
+  after_update :notify_admin
 
   private
 
@@ -18,5 +19,9 @@ class Book < ApplicationRecord
         self.slug = "#{title.parameterize}-#{counter}"
         counter += 1
       end
+    end
+
+    def notify_admin
+      AdminMailer.with(book: self).book_updated.deliver_later
     end
 end
