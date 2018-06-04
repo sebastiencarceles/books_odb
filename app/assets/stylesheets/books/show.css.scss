@@ -1,0 +1,15 @@
+.comment {
+  margin: 20px;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 10px;
+  
+  .title {
+    font-size: 10px;
+    font-style: italic;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+}

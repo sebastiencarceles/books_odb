@@ -1,3 +1,14 @@
 <h1><%= @book.title %></h1>
 <p><strong><%= @book.author %> - <%= @book.published_at %> - <%= @book.pages_count %> pages</strong></p>
 <p><%= @book.description %></p>
+<hr>
+<% @book.comments.order(created_at: :desc).each do |comment| %>
+  <div class="comment">
+    <div class="title">
+      <%= comment.created_at %> - <%= comment.first_name %> (<%= comment.score %> / 5)
+    </div>
+    <div class="description">
+      <%= comment.description %>
+    </div>
+  </div>
+<% end %>
