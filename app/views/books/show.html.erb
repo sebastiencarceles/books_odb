@@ -5,7 +5,7 @@
 <% @book.comments.order(created_at: :desc).each do |comment| %>
   <div class="comment">
     <div class="title">
-      <%= comment.created_at %> - <%= comment.first_name %> (<%= comment.score %> / 5)
+      <%= time_ago_in_words(comment.created_at) %> - <%= comment.first_name %> (<%= comment.score %> / 5)
     </div>
     <div class="description">
       <%= comment.description %>
