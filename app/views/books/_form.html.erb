@@ -37,11 +37,6 @@
   </p>
 
   <p>
-    <%= form.label :editor_name %><br>
-    <%= form.text_field :editor_name, value: @book.editor_name || session[:editor_name] %>
-  </p>
-
-  <p>
     <%= form.submit %>
   </p>
 <% end %>

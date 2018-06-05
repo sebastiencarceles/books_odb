@@ -1,6 +1,5 @@
 class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destroy]
-  before_action :store_editor_name, only: [:create, :update]
 
   def index
     @books = Book.order(:title).page(params[:page])
@@ -42,15 +41,11 @@ class BooksController < ApplicationController
   private
 
     def book_params
-      params.require(:book).permit(:title, :author, :description, :pages_count, :published_at, :editor_name)
+      params.require(:book).permit(:title, :author, :description, :pages_count, :published_at)
     end
 
     def find_book
       @book = Book.find_by_id(params[:identifier])
       @book ||= Book.find_by_slug(params[:identifier])
-    end
-
-    def store_editor_name
-      session[:editor_name] = book_params[:editor_name]
     end
 end
