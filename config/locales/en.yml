@@ -20,6 +20,11 @@ en:
   home:
     index:
       welcome: Not much for now. But hey, hello world!
+  users:
+    account: Account
+    logout: Log out
+    signin: Sign in
+    signup: Sign up
   views:
     pagination:
       first: "&laquo; First"

@@ -20,6 +20,11 @@ fr:
   home:
     index:
       welcome: Pas grand chose pour l'instant. On y travaille !
+  users:
+    account: Compte
+    logout: Déconnexion
+    signin: Connexion
+    signup: Enregistrement
   views:
     pagination:
       first: "&laquo; Début"
