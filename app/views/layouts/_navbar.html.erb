@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-nav">
+    <%= link_to t("nav.home"), root_path, class: "navbar-brand" %>
+    <% if user_signed_in? %>
+      <%= link_to t("nav.account"), edit_user_registration_path, class: "nav-item nav-link" %>
+      <%= link_to t("nav.logout"), destroy_user_session_path, method: :delete, class: "nav-item nav-link" %>
+    <% else %>
+      <%= link_to t("nav.signin"), new_user_session_path, class: "nav-item nav-link" %>
+      <%= link_to t("nav.signup"), new_user_registration_path, class: "nav-item nav-link" %>
+    <% end %>
+  </div>
+</nav>

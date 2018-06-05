@@ -20,8 +20,9 @@ fr:
   home:
     index:
       welcome: Pas grand chose pour l'instant. On y travaille !
-  users:
+  nav:
     account: Compte
+    home: Accueil
     logout: Déconnexion
     signin: Connexion
     signup: Enregistrement

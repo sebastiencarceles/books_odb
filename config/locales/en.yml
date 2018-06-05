@@ -20,8 +20,9 @@ en:
   home:
     index:
       welcome: Not much for now. But hey, hello world!
-  users:
+  nav:
     account: Account
+    home: Home
     logout: Log out
     signin: Sign in
     signup: Sign up
