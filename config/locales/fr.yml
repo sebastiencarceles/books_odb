@@ -12,7 +12,7 @@ fr:
       new_book: "+ Ajouter un livre"
       title: Tous les livres
     new:
-      title: Créer un nouveu livre
+      title: Créer un nouveau livre
     updated: Livre mis à jour
   helpers:
     books:
