@@ -1,5 +1,7 @@
 class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
+  before_action :check_ownership, only: [:edit, :update, :destroy]
 
   def index
     @books = Book.order(:title).page(params[:page])
@@ -16,7 +18,7 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(book_params)
+    @book = current_user.books.new(book_params)
     if @book.save
       flash[:notice] = t("books.created")
       redirect_to books_path
@@ -47,5 +49,9 @@ class BooksController < ApplicationController
     def find_book
       @book = Book.find_by_id(params[:identifier])
       @book ||= Book.find_by_slug(params[:identifier])
+    end
+
+    def check_ownership
+      redirect_to books_path, alert: t("books.not_owner") if current_user.id != @book.user_id
     end
 end

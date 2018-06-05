@@ -13,6 +13,7 @@ fr:
       title: Tous les livres
     new:
       title: Créer un nouveau livre
+    not_owner: Oh non! Il semble bien que vous ne soyez pas le propriétaire de cette fiche de lecture
     updated: Livre mis à jour
   helpers:
     books:

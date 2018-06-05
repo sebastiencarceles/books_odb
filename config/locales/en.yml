@@ -13,6 +13,7 @@ en:
       title: All the books
     new:
       title: Create a new book
+    not_owner: Oops, it looks that you are not the owner of this book
     updated: Book updated
   helpers:
     books:

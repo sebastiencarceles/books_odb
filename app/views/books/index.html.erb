@@ -4,4 +4,6 @@
   <%= render "books" %>
 </div>
 
-<%= link_to t("books.index.new_book"), new_book_path %>
+<% if user_signed_in? %>
+  <%= link_to t("books.index.new_book"), new_book_path %>
+<% end %>
