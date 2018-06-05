@@ -1,5 +1,6 @@
 class Book < ApplicationRecord
   has_many :comments, dependent: :destroy
+  belongs_to :user
 
   validates :title, :author, :slug, presence: true
   validates :pages_count, numericality: { only_integer: true, greater_than: 0 }, allow_blank: true
