@@ -1,7 +1,7 @@
 <h1><%= @book.title %></h1>
 <p><strong><%= @book.author %> - <%= @book.published_at %> - <%= @book.pages_count %> pages</strong></p>
 <p><%= @book.description %></p>
-<small><%= @book.user.try(:first_name) %></small>
+<small><%= @book.user&.first_name %></small>
 <hr>
 <%= link_to "Add a comment", "#", id: "add-comment" %>
 <div id="new-comment">
