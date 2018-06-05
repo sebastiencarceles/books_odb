@@ -1,4 +1,7 @@
-$ ->
+$(document).on "turbolinks:load", ->
+  return if $("#new-comment").length == 0
+
+  console.log "Show loaded"
   $("#new-comment").hide()
 
   $("#add-comment").on "click", (e) ->
