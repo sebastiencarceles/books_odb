@@ -22,6 +22,7 @@ fr:
       welcome: Pas grand chose pour l'instant. On y travaille !
   nav:
     account: Compte
+    books: Livres
     home: Accueil
     logout: Déconnexion
     signin: Connexion

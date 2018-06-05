@@ -22,6 +22,7 @@ en:
       welcome: Not much for now. But hey, hello world!
   nav:
     account: Account
+    books: Books
     home: Home
     logout: Log out
     signin: Sign in
