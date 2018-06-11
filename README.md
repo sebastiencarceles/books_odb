@@ -1,6 +1,6 @@
 # README
 
-This is a simple example project, to illustrate the online course Learn Ruby on Rails QUICKLY (currently available only in french: [Apprendre Ruby on Rails RAPIDEMENT](https://TODO/link) on Udemy).
+This is a simple example project, to illustrate the online course Learn Ruby on Rails QUICKLY (currently available only in french: [Apprendre Ruby on Rails RAPIDEMENT](https://www.udemy.com/apprendre-ruby-on-rails-rapidement) on Udemy).
 
 There is one branch per chapter of the online course. So if you want the most advanced version of the project, check out the last branch.
 
