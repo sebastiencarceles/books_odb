@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :book do
+    user
     title { Faker::Book.title }
     description { Faker::Lorem.paragraph }
     author { Faker::Book.author }
